@@ -1,0 +1,18 @@
+{
+    "bindings": [
+      {
+        "name": "myBlob",
+        "path": "testcontainer/{name}",
+        "connection": "teststorageaccount441_STORAGE",
+        "direction": "in",
+        "type": "blobTrigger"
+      },
+      {
+        "name": "inputBlob",
+        "direction": "in",
+        "type": "blob",
+        "path": "testcontainer/{name}",
+        "connection": "AzureWebJobsStorage"
+      }
+    ]
+  }
